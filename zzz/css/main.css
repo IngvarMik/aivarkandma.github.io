@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: linear-gradient(90deg,rgba(42, 155, 108, 1) 0%, rgba(124, 87, 199, 1) 58%, rgba(237, 221, 83, 1) 100%);
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .Infvar {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: aliceblue;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: magenta;
+    border-radius: 7px;
+    position: relative;
+    top: 8px;
+    left: -10px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 4px solid maroon;
+}
+
+header nav ul li.btn a {
+    background: darkmagenta;
+    padding: 10px 16px;
+    border-radius: 7px;
+    transition: all 400ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: greenyellow;
+}
+
+.hero {
+    padding-bottom: 100px;
+}
+
+.hero--info {
+    width: 600px;
+    padding-top: 60px;
+}
+
+.hero--info h2 {
+    color: maroon;
+    font-size: 20 px;
+    font-weight: 600px;
+}
+
+.hero--info h3 {
+    color: maroon;
+    font-size: 30 px;
+    font-weight: 600px;
+    margin: 5px;
+}
+
+.hero--info .btn {
+    background: gray;
+    color: #fff;
+    border-radius: 50px;
+    padding: 13px 30px;
+    border: 0;
+    transition: all 300ms ease;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.hero img {
+    position: relative;
+    left: 100px;
+}
+
+
